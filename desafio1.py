@@ -9,8 +9,11 @@ somaminutos = m1 + m2
 if somaminutos >= 60:
     somahoras = somahoras + 1
     somaminutos = somaminutos - 60
-if somahoras > 12:
-    somahoras = somahoras - 12
+
 if somahoras > 24:
     somahoras = somahoras - 24
-print (f"{somahoras} : {somaminutos}")
+
+if somahoras > 12:
+    somahoras = somahoras - 12
+
+print (f"a soma é {somahoras} : {somaminutos}")
